@@ -77,5 +77,6 @@ body.loaded .slide-in {
   border: 2px solid var(--text-color);
   margin-right: 10px;
   object-fit: cover;
+  padding: 3px;
 }
 
