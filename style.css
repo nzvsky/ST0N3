@@ -72,6 +72,10 @@ body.loaded .slide-in {
 
 .logo {
   width: 50px;
-  height: auto;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--text-color);
   margin-right: 10px;
+  object-fit: cover;
 }
+
