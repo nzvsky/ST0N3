@@ -36,7 +36,7 @@ a {
 .card {
   max-width: 800px;
   background-color: --border;
-  border: 1px solid var(--text-color);
+  border: 1px solid var(--border);
   border-radius: 8px;
   padding: 16px;
   margin: 20px auto;
