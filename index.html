@@ -8,28 +8,48 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400&display=swap">
   <link rel="icon" href="Fr1zeenLogo.png" type="image/png">
+  <style>
+      #title::before {
+    position: absolute;
+    content: "Fr1zeen";
+    transform: translate(-3px, -3px);
+    color: white;
+    z-index: 2;
+    text-shadow: 3px 3px 0 lightgray;
+}
+#title::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    content: "Fr1zeen";
+    transform: translate(30px, 2px);
+    color: darkgray;
+    z-index: -1;
+    text-shadow: 3px 3px 0 gray;
+}
+</style>
 </head>
 
 <body>
   <div class="slide-in">
 <div class="header">
   <img src="Fr1zeenLogo.png" alt="Fr1zeen Logo" class="logo">
-  <h1>Fr1zeen</h1>
+  <h1 id="title">Fr1zeen</h1>
 </div>
     <p style="text-align:center;">Planned Release Date: November 16</p>
     <div class="card">
-    <h2>What is it?</h2>
-    <p>FR1ZEEN is an expliot that can unenroll an enterprise enrolled chromebook that has a leaked RMA shim on any ChromeOS version. It boots from a USB flash drive from a edited RMA shim to a GUI that gives you the option to then unenroll your Chromebook
+    <h2>What even is Fr1zeen?</h2>
+    <p>Fr1zeen is a newly-discovered exploit that can unenroll an enterprise enrolled chromebook. This exploit uses RMA shims, which is only intended for use by manufacturers and repair shops, but were leaked. By using this exploit, we can boot into developer mode, enter recovery and boot off of the shim USB like it was a recovery image. Since Google left a rootfs vulnerability unpatched, we were able to run unsigned code; and therefore unenrollment.
 </p>
 
     </div>
     <div class="card">
-      <h2>How Fr1zeen was found</h2>
-      <p>The FR1ZEEN exploit was discovered by a group of ethical hackers during a routine security audit of school Chromebooks. They identified a vulnerability in the update engine that could be exploited to remove enterprise enrollment, leading to the creation of the exploit
+      <h2>Okay, so, how did you find Fr1zeen?</h2>
+      <p>Even though Google has patched unenrollment, the new exploit was discovered by a group of ethical hackers during a routine security audit of school Chromebooks. The hackers identified a vulnerability in the update-engine that could be exploited to remove enterprise enrollment, leading to the creation of the exploit. The exploit uses RMA shims to manipulate update-engine to allow for unenrollment when rebooting back into ChromeOS.
 </p>
     </div>
     <div class="card">
-      <h2>Prerequisites:</h2>
+      <h2>What are the requirements for Fr1zeen?</h2>
       <ol>
         <li>A brain</li>
         <li>An enterprise enrolled chromebook with a working leaked RMA shim</li>
@@ -37,6 +57,12 @@
         </a></li>
         <li>A USB flash drive with at least 8gb of storage</li>
       </ol>
+    </div>
+    <div class="card">
+      <h2>Where is the download link? I can't find it.</h2>
+      <p>
+        The exploit is not released yet.
+      </p>
     </div>
     <div class="card">
       <h2>Notes:</h2>
