@@ -80,3 +80,22 @@ body.loaded .slide-in {
   padding: 3px;
 }
 
+#title::before {
+    position: absolute;
+    content: "Fr1zeen";
+    transform: translate(-3px, -3px);
+    color: white;
+    z-index: 2;
+    text-shadow: 3px 3px 0 lightgray;
+}
+
+#title::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    content: "Fr1zeen";
+    transform: translate(30px, 2px);
+    color: darkgray;
+    z-index: -1;
+    text-shadow: 3px 3px 0 gray;
+}
