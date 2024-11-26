@@ -1,7 +1,7 @@
 :root {
-  --background: #1E252E;
-  --text-color: #BAD9EC;
-  --border: #57C3E7;
+  --background: #303030;
+  --text-color: #cccccc;
+  --border: #808080;
   --hover: #00A3E0;
 }
 
@@ -36,7 +36,7 @@ a {
 .card {
   max-width: 800px;
   background-color: --border;
-  border: 1px solid #3a344e;
+  border: 1px solid #808080;
   border-radius: 8px;
   padding: 16px;
   margin: 20px auto;
@@ -82,7 +82,7 @@ body.loaded .slide-in {
 
 #title::before {
     position: absolute;
-    content: "Fr1zeen";
+    content: "ST0N3";
     transform: translate(-3px, -3px);
     color: white;
     z-index: 2;
@@ -93,7 +93,7 @@ body.loaded .slide-in {
     position: absolute;
     left: 0;
     right: 0;
-    content: "Fr1zeen";
+    content: "ST0N3";
     transform: translate(30px, 2px);
     color: darkgray;
     z-index: -1;
